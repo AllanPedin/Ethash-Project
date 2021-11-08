@@ -1,4 +1,5 @@
 from constants import *
+from utils import *
 FNV_PRIME = 0x01000193
 
 def fnv(v1, v2):

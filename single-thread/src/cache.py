@@ -1,4 +1,6 @@
 from constants import *
+import sha3
+from utils import *
 def get_cache_size(block_number):
     sz = CACHE_BYTES_INIT + CACHE_BYTES_GROWTH * (block_number // EPOCH_LENGTH)
     sz -= HASH_BYTES
