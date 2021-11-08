@@ -1,5 +1,4 @@
 from constants import *
-import sha3
 from utils import *
 def get_cache_size(block_number):
     sz = CACHE_BYTES_INIT + CACHE_BYTES_GROWTH * (block_number // EPOCH_LENGTH)
@@ -14,6 +13,12 @@ def get_full_size(block_number):
     while not isprime(sz / MIX_BYTES):
         sz -= 2 * MIX_BYTES
     return sz
+
+def get_seedhash(block_number):
+    s = '\x00' * 32
+    for i in range(block_number // EPOCH_LENGTH):
+        s = serialize_hash(sha3_256(s))
+    return s
 
 def mkcache(cache_size, seed):
     n = cache_size // HASH_BYTES

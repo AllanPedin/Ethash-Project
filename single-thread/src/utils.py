@@ -1,4 +1,5 @@
 from constants import *
+import hashlib
 import sha3, copy
 
 # Assumes little endian bit ordering (same as Intel architectures)
@@ -21,6 +22,7 @@ def deserialize_hash(h):
 def hash_words(h, sz, x):
     if isinstance(x, list):
         x = serialize_hash(x)
+    print("dog", x)
     y = h(x)
     return deserialize_hash(y)
 

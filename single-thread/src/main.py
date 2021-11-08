@@ -1,11 +1,11 @@
 from mine import *
-from cache import get_full_size, get_cache_size, mkcache
+from cache import get_full_size, get_cache_size, get_seedhash, mkcache
 from dataset import calc_dataset
 from block import get_block_header, number, difficulty
 
-SEED = 1010101010
 
-block_number = number #most recent block nov 7
+block_number = number 
+SEED = get_seedhash(block_number)
 
 full_size = get_full_size(block_number)
 cache_size =  get_cache_size(block_number)
