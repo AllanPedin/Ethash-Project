@@ -924,7 +924,6 @@ def main():
     block = Block(1)
     header = str(bytearray(header_size))
     difficulty = 0x4000
-    print(difficulty)
     
     cache_size = get_cache_size(block.number)
     full_size = get_full_size(block.number)
@@ -942,11 +941,166 @@ def main():
     end_dataset_time = time.time()
     print("time to dataset", end_dataset_time - start_dataset_time)
 
-    print("Mine a block")
+    print("Mine a block, difficulty:", difficulty)
     start_mine_time = time.time()
     "mine:", mine(full_size, dataset, header, difficulty)
     end_mine_time = time.time()
     print("time to mine", end_mine_time - start_mine_time)
+
+    difficulty = 0x5000
+    print("Mine a block, difficulty:", difficulty)
+    start_mine_time = time.time()
+    "mine:", mine(full_size, dataset, header, difficulty)
+    end_mine_time = time.time()
+    print("time to mine", end_mine_time - start_mine_time)
+
+    difficulty = 0x6000
+    print("Mine a block, difficulty:", difficulty)
+    start_mine_time = time.time()
+    "mine:", mine(full_size, dataset, header, difficulty)
+    end_mine_time = time.time()
+    print("time to mine", end_mine_time - start_mine_time)
+
+    difficulty = 0x7000
+    print("Mine a block, difficulty:", difficulty)
+    start_mine_time = time.time()
+    "mine:", mine(full_size, dataset, header, difficulty)
+    end_mine_time = time.time()
+    print("time to mine", end_mine_time - start_mine_time)
+
+    difficulty = 0x8000
+    print("Mine a block, difficulty:", difficulty)
+    start_mine_time = time.time()
+    "mine:", mine(full_size, dataset, header, difficulty)
+    end_mine_time = time.time()
+    print("time to mine", end_mine_time - start_mine_time)
+
+    difficulty = 0x9000
+    print("Mine a block, difficulty:", difficulty)
+    start_mine_time = time.time()
+    "mine:", mine(full_size, dataset, header, difficulty)
+    end_mine_time = time.time()
+    print("time to mine", end_mine_time - start_mine_time)
+
+    difficulty = 0xa000
+    print("Mine a block, difficulty:", difficulty)
+    start_mine_time = time.time()
+    "mine:", mine(full_size, dataset, header, difficulty)
+    end_mine_time = time.time()
+    print("time to mine", end_mine_time - start_mine_time)
+
+    difficulty = 0xb000
+    print("Mine a block, difficulty:", difficulty)
+    start_mine_time = time.time()
+    "mine:", mine(full_size, dataset, header, difficulty)
+    end_mine_time = time.time()
+    print("time to mine", end_mine_time - start_mine_time)
+
+    difficulty = 0xc000
+    print("Mine a block, difficulty:", difficulty)
+    start_mine_time = time.time()
+    "mine:", mine(full_size, dataset, header, difficulty)
+    end_mine_time = time.time()
+    print("time to mine", end_mine_time - start_mine_time)
+
+    difficulty = 0xd000
+    print("Mine a block, difficulty:", difficulty)
+    start_mine_time = time.time()
+    "mine:", mine(full_size, dataset, header, difficulty)
+    end_mine_time = time.time()
+    print("time to mine", end_mine_time - start_mine_time)
+
+    difficulty = 0xe000
+    print("Mine a block, difficulty:", difficulty)
+    start_mine_time = time.time()
+    "mine:", mine(full_size, dataset, header, difficulty)
+    end_mine_time = time.time()
+    print("time to mine", end_mine_time - start_mine_time)
+
+    difficulty = 0xf000
+    print("Mine a block, difficulty:", difficulty)
+    start_mine_time = time.time()
+    "mine:", mine(full_size, dataset, header, difficulty)
+    end_mine_time = time.time()
+    print("time to mine", end_mine_time - start_mine_time)
+
+    difficulty = 0x10000
+    print("Mine a block, difficulty:", difficulty)
+    start_mine_time = time.time()
+    "mine:", mine(full_size, dataset, header, difficulty)
+    end_mine_time = time.time()
+    print("time to mine", end_mine_time - start_mine_time)
+
+    difficulty = 0x100000
+    print("Mine a block, difficulty:", difficulty)
+    start_mine_time = time.time()
+    "mine:", mine(full_size, dataset, header, difficulty)
+    end_mine_time = time.time()
+    print("time to mine", end_mine_time - start_mine_time)
+    
+    difficulty = 0x1000000
+    print("Mine a block, difficulty:", difficulty)
+    start_mine_time = time.time()
+    "mine:", mine(full_size, dataset, header, difficulty)
+    end_mine_time = time.time()
+    print("time to mine", end_mine_time - start_mine_time)
+    
+    difficulty = 0x10000000
+    print("Mine a block, difficulty:", difficulty)
+    start_mine_time = time.time()
+    "mine:", mine(full_size, dataset, header, difficulty)
+    end_mine_time = time.time()
+    print("time to mine", end_mine_time - start_mine_time)
+
+    difficulty = 0x100000000
+    print("Mine a block, difficulty:", difficulty)
+    start_mine_time = time.time()
+    "mine:", mine(full_size, dataset, header, difficulty)
+    end_mine_time = time.time()
+    print("time to mine", end_mine_time - start_mine_time)
+
+    difficulty = 0x1000000000
+    print("Mine a block, difficulty:", difficulty)
+    start_mine_time = time.time()
+    "mine:", mine(full_size, dataset, header, difficulty)
+    end_mine_time = time.time()
+    print("time to mine", end_mine_time - start_mine_time)
+
+    difficulty = 0x10000000000
+    print("Mine a block, difficulty:", difficulty)
+    start_mine_time = time.time()
+    "mine:", mine(full_size, dataset, header, difficulty)
+    end_mine_time = time.time()
+    print("time to mine", end_mine_time - start_mine_time)
+
+    difficulty = 0x10000000000
+    print("Mine a block, difficulty:", difficulty)
+    start_mine_time = time.time()
+    "mine:", mine(full_size, dataset, header, difficulty)
+    end_mine_time = time.time()
+    print("time to mine", end_mine_time - start_mine_time)
+
+    difficulty = 0x100000000000
+    print("Mine a block, difficulty:", difficulty)
+    start_mine_time = time.time()
+    "mine:", mine(full_size, dataset, header, difficulty)
+    end_mine_time = time.time()
+    print("time to mine", end_mine_time - start_mine_time)
+
+    difficulty = 0x1000000000000
+    print("Mine a block, difficulty:", difficulty)
+    start_mine_time = time.time()
+    "mine:", mine(full_size, dataset, header, difficulty)
+    end_mine_time = time.time()
+    print("time to mine", end_mine_time - start_mine_time)
+
+    difficulty = 0x27FCE42118BE10 #Realistic difficulty
+    print("Mine a block, difficulty:", difficulty)
+    start_mine_time = time.time()
+    "mine:", mine(full_size, dataset, header, difficulty)
+    end_mine_time = time.time()
+    print("time to mine", end_mine_time - start_mine_time)
+
 
 
 
